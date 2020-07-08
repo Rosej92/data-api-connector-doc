@@ -18,7 +18,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 | Name | Type | Description | Default Value | Required
 |Name | String | The name for this configuration. Connectors reference the configuration with this name. | | *{y}*{nbsp}
 | Connection a|
-* <<DataConfiguration_Oauth2Application, Commerce Cloud Data Connector Config>> {nbsp}
+* <<DataConfiguration_Oauth2Application, Oauth2 Application Connection Provider>> {nbsp}
  | The connection types that can be provided to this configuration. | | *{y}*{nbsp}
 | Response Timeout a| Number |  The timeout for request to the remote service. |  1 | {nbsp}
 | Response Timeout Unit a| Enumeration, one of:
@@ -36,7 +36,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 
 ==== Connection Types
 [[DataConfiguration_Oauth2Application]]
-===== Commerce Cloud Data Connector Config
+===== Oauth2 Application Connection Provider
 
 ====== Parameters
 
@@ -95,7 +95,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 |===
 | Name | Type | Description | Default Value | Required
 |Name | String | The name for this configuration. Connectors reference the configuration with this name. | | *{y}*{nbsp}
-| Connection a| <<DataConfiguration_Oauth2Application, Commerce Cloud Data Connector Config>>
+| Connection a| <<DataConfiguration_Oauth2Application, Oauth2 Application Connection Provider>>
  | The connection types that can be provided to this configuration. | | *{y}*{nbsp}
 | Response Timeout a| Number |  The timeout for request to the remote service. |  1 | {nbsp}
 | Response Timeout Unit a| Enumeration, one of:
