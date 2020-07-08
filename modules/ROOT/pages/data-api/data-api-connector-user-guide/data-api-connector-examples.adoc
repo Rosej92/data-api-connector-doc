@@ -43,7 +43,7 @@ image::data-api/data-connector-example/data-connector-assignment-search-body.jpg
 ```
 
 [start = 5]
-. select the Commerce Cloud Data Connector Config from Commerce Cloud Data Connector and configure it with the required values or add a new configuration by clicking the green plus (+) symbol.
+. Select the Commerce Cloud Data Connector Config from Commerce Cloud Data Connector and configure it with the required values or add a new configuration by clicking the green plus (+) symbol.
 
 image::data-api/data-connector-example/data-api-connector-oauth2-configuration.jpg[]
 
