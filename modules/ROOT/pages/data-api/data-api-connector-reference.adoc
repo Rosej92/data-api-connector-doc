@@ -35,10 +35,8 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 |===
 
 ==== Connection Types
-|===
 [[DataConfiguration_Oauth2Application]]
 ===== Oauth2 Application Connection Provider
-
 
 ====== Parameters
 
