@@ -62,6 +62,6 @@ xref:data-api-connector-studio.adoc[Anypoint Studio].
 
 == See Also
 
-* https://www.mulesoft.com/exchange/?search=Commerce Cloud Data Connector&type=connector[Anypoint
+* https://www.mulesoft.com/exchange/?search=commerce-cloud-data-connector&type=connector[Anypoint
 Exchange]
 * https://forums.mulesoft.com[MuleSoft Forum]
