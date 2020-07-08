@@ -1,0 +1,102 @@
+= Shop API Connector Design Center Configuration - Mule 4
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+:imagesdir: ../../../assets/images/
+:y: &#10003;
+
+Anypoint Design Center (Design Center) enables you to create apps visually. To use Design Center,
+work with your Anypoint Platform administrator to ensure that you have
+a xref:access-management::environments.adoc#to-create-a-new-environment[design
+environment].
+For more information, see the xref:design-center::fd-tour.adoc[Flow Designer
+Tour].
+To create an app in Design Center:
+
+* Configure the input source (trigger) for your app.  
+* Add the connector as a component to process the input for the app.
+
+For information about Design Center field values, see
+the xref:../../shop-api/shop-api-connector-reference.adoc[Shop API Connector Reference]
+
+== Configure the Input Source Trigger
+
+. In Design Center, click *Create*.
+. Click *Create new application*.
+. Specify a value for *Project name*, and click *Create*.
+. Click *Go straight to canvas* to exit *Let's get started*.
+. Click the trigger card.
+. Use HTTP Connector as the trigger.
+. Complete these fields:
+
+
++
+[%header%autowidth.spread]
+
+|===
+|Field |Description |Required?
+|*Protocol*|Protocol selected for the HTTP connector: either HTTP or HTTPS.| {y}
+|*Host*|IP address where your Mule application listens for requests.| {y}
+|*Port*|Port address where your Mule application listens for requests.| {y}
+|*Base Path*|Path where your Mule application listens for requests.| {y}
+|===
++
+
+. Click *Test*.
+Design Center automatically saves all changes.
+
+== Configure the Target Component
+
+. Click *+* next to the trigger card.
+. In *Select a component*, search for Shop API Connector.
+. Select the connector name.
+. Select an operation for the connector and add the configurations.
+
+* Complete these fields for Client_Id Connection Provider:
+
++
+[%header%autowidth.spread]
+
+|===
+|*Field* |Description |Required? 
+|*Base URI*|URL to access API| {y}
+|*Client Id*|Client ID for authentication| {y}
+|===
++
+
+* Complete these fields for Auth 2 Application Connection Provider:
+
++
+[%header%autowidth.spread]
+
+|===
+|Field |Description |Required?  
+|*Base URI*|URL to access API| {y}
+|*Username*|Username of commerce cloud account| {y}
+|*Password*|Password of commerce cloud account| {y}
+|*Token URI*|URL to access token| {y}
+|*Client Id*|Client ID of commerce cloud account| {y}
+|*Client Secret*|Client secret of commerce cloud account| {y}
+|===
++
+
+* Complete these fields for Customer Auth Connection Provider:
+
++
+[%header%autowidth.spread]
+
+|===
+|Field |Description |Required?  
+|*Base URI*|URL to access API| {y}
+|*Username*|Username of commerce cloud account| {y}
+|*Password*|Password of commerce cloud account| {y}
+|*Client Id*|Client ID of commerce cloud account| {y}
+|*Type*|Customer Type (Guest or Credentials)| {y}
+|===
++
+
+. Click *Test*.
+
+== See Also
+
+* https://forums.mulesoft.com[MuleSoft Forum]

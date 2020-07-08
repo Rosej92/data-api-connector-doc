@@ -1,0 +1,48 @@
+= Commerce Cloud Data Connector Release Notes
+
+July 2020
+
+_Support Category: Select_
+
+Anypoint Connector for Data API(Commerce Cloud Data Connector) provides mule users with a quick and easy way to integrate with Salesforce Commerce Cloud Data API endpoints.
+
+== 1.0.0 
+July 2020
+
+This release of Commerce Cloud Data Connector is compatible with Mule 4 but not Mule 3.
+
+== Compatibility
+Commerce Cloud Data Connector is compatible with these software versions:
+
+[%header%autowidth.spread]
+|===
+|Software |Version
+|Anypoint Studio |7 and later
+|Mule runtime engine |4.2.1 and later
+|JDK |1.8.x
+|===
+
+== Features
+
+Commerce Cloud Data Connector provides access to Salesforce Commerce Cloud Data APIs for these workflows:
+
+* Assignments
+* Campaigns
+* Catalogs
+* Coupons
+* Customers
+* Gift Certificates
+* Orders
+* Products
+* Promotions
+* Source Code Groups
+
+== Fixed in This Release
+Not applicable: this is the first released version.
+
+== See Also
+* https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[Anypoint Connectors Support Policy]
+* https://github.com/Apisero-Connectors/shop-api-connector-doc/blob/master/doc/user-manual.adoc[​User Manual]
+* https://forums.mulesoft.com[MuleSoft Forum]
+* https://support.mulesoft.com[Contact MuleSoft Support]
+ 
