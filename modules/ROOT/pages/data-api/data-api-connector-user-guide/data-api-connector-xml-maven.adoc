@@ -1,15 +1,15 @@
-= Shop API Connector XML and Maven Support - Mule 4
+= Commerce Cloud Data Connector XML and Maven Support - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../../../assets/images/
 
-If you manually code a Mule app in XML either from the Anypoint Studio XML editor or from a text editor, you can access Anypoint Connector for Shop API (Shop API Connector) in your app by adding reference statements to your XML Mule flow and in the Apache Maven `pom.xml` file.
+If you manually code a Mule app in XML either from the Anypoint Studio XML editor or from a text editor, you can access Anypoint Connector for Data API (Commerce Cloud Data Connector) in your app by adding reference statements to your XML Mule flow and in the Apache Maven `pom.xml` file.
 
 [NOTE]
 ====
 You can avoid the manual process described in this topic by using Studio. When
-you install Shop API Connector in Anypoint Studio, Studio automatically populates
+you install Commerce Cloud Data Connector in Anypoint Studio, Studio automatically populates
 the XML code with the connector namespace and schema location and adds a
 dependency to the `pom.xml` file.
 ====
@@ -18,23 +18,23 @@ Paste the following code inside the `mule` tag of the header
 of your configuration XML:
 [source,xml,linenums]
 ----
-http://www.mulesoft.org/schema/mule/shop-api
-http://www.mulesoft.org/schema/mule/shop-api/current/mule-shop-api.xsd
+http://www.mulesoft.org/schema/mule/commerce-cloud-dataapi
+http://www.mulesoft.org/schema/mule/commerce-cloud-dataapi/current/mule-commerce-cloud-dataapi.xsd
 ----
 This example shows how the namespace statements are placed in the XML:
 [source,xml,linenums]
 ----
-<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" 
-	xmlns:shop="http://www.mulesoft.org/schema/mule/shop"
-    xmlns="http://www.mulesoft.org/schema/mule/core"
-    xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
+<mule xmlns:commerce-cloud-dataapi="http://www.mulesoft.org/schema/mule/commerce-cloud-dataapi" 
+xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core 
 	http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-	http://www.mulesoft.org/schema/mule/shop 
-	http://www.mulesoft.org/schema/mule/shop/current/mule-shop.xsd
 	http://www.mulesoft.org/schema/mule/http 
-	http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+	http://www.mulesoft.org/schema/mule/commerce-cloud-dataapi 
+	http://www.mulesoft.org/schema/mule/commerce-cloud-dataapi/current/mule-commerce-cloud-dataapi.xsd">
 </mule>
 
 ----
@@ -47,7 +47,7 @@ engine translates the `RELEASE` dependency keyword to the current version.
 ```
 <dependency>
     <groupId>com.mulesoft.connectors</groupId>
-    <artifactId>shop-api</artifactId>
+    <artifactId>commerce-cloud-dataapi</artifactId>
     <version>RELEASE</version>
     <classifier>mule-plugin</classifier>
 </dependency>
@@ -61,7 +61,7 @@ and click *Dependency Snippets*.
 == Next Step
 
 After completing your namespace and `pom.xml` file, you can try
-the xref:shop-api-connector-examples.adoc[Examples].
+the xref:data-api-connector-examples.adoc[Examples].
 
 == See Also
 

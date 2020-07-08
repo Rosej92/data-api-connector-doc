@@ -1,24 +1,17 @@
-= Shop API Connector - Get Started - Mule 4
+= Commerce Cloud Data Connector - Get Started - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../../../assets/images/
 Support Category: Select
-Shop API Connector Version Major.Minor.Patch
-// Anypoint Connector for Shop API Connector provides ...
-== About Shop API Connector
+Commerce Cloud Data Connector Version Major.Minor.Patch
+// Anypoint Connector for Commerce Cloud Data Connector provides ...
+== About Commerce Cloud Data Connector
 
-Anypoint Connector for Shop API Connector (Shop API Connector) is an operation-based connector, which means that when you add the connector to your flow, you need to configure a specific operation for the connector to perform. 
+Anypoint Connector for Data API Connector (Commerce Cloud Data Connector) is an operation-based connector, which means that when you add the connector to your flow, you need to configure a specific operation for the connector to perform. 
 
-Shop API Connector enables your user to access the Open Commerce API (OCAPI) by using certain configurations, and to then access the data, update the data, and delete the data, as required.
+Commerce Cloud Data Connector enables the user to access the Commerce Cloud Data API by using certain configurations, and to then access the data, update the data, and delete the data, as required.
 
-OCAPI enables you to access resources using HTTP requests and HTTP responses. Each resource is addressed by its unique URL, which includes the API version. Data is transported using request or header parameters, or within the request body as a JSON document with a defined structure. 
-
-OCAPI is divided into different APIs: 
-
-* Shop API enables a client to interact with the system as a shop customer or as an agent shopping on behalf of a customer.
-* Data API gives create, read, update, and delete access to system resources.
-* Meta API retrieves a formal description of the Open Commerce API, including custom attributes.
 
 == Mule Compatibility
 
@@ -32,43 +25,43 @@ OCAPI is divided into different APIs:
 
 == Prerequisites
 
-Before creating an app, you must have access to the Shop API Connector target resource and
+Before creating an app, you must have access to the Commerce Cloud Data Connector target resource and
 Anypoint Platform. You also need to understand how to create a Mule app using
 Anypoint Design Center (Design Center) or Anypoint Studio (Studio). 
 
 Further, you must be familiar with Mule runtime engine (Mule), Anypoint Connectors, Anypoint Studio Essentials, Mule flows, and Mule Global Elements.
 
-To use Shop API Connector, you need:
+To use Commerce Cloud Data Connector, you need:
 
 * Anypoint Studio version 7 and later
-* Shop API Connector
-* Commerce cloud credentials to access Shop API
+* Commerce Cloud Data Connector
+* Commerce cloud credentials to access Data API
 
 
 == Audience
 * Starting user
 To create your Mule app,
-see xref:shop-api-connector-design-center.adoc[Design Center Configuration]
-or xref:shop-api-connector-studio.adoc[Studio Configuration].The
-xref:shop-api-connector-examples.adoc[Examples] topic provides one or more use
+see xref:data-api-connector-design-center.adoc[Design Center Configuration]
+or xref:data-api-connector-studio.adoc[Studio Configuration].The
+xref:data-api-connector-examples.adoc[Examples] topic provides one or more use
 cases for using the connector.
 * Power user
-Read the xref:shop-api-connector-xml-maven.adoc[XML and Maven
-Support] and xref:shop-api-connector-examples.adoc[Examples] topics.
+Read the xref:data-api-connector-xml-maven.adoc[XML and Maven
+Support] and xref:data-api-connector-examples.adoc[Examples] topics.
 
 == Common Use Cases For the Connector
-See xref:shop-api-connector-examples.adoc[Examples] for a simple use case.
+See xref:data-api-connector-examples.adoc[Examples] for a simple use case.
 
 
 == Next Step
 
 After you meet the prerequisites and experiment with templates and
 examples, you are ready to create an app with
-xref:shop-api-connector-design-center.adoc[Design Center] or
-xref:shop-api-connector-studio.adoc[Anypoint Studio].
+xref:data-api-connector-design-center.adoc[Design Center] or
+xref:data-api-connector-studio.adoc[Anypoint Studio].
 
 == See Also
 
-* https://www.mulesoft.com/exchange/?search=shop-api&type=connector[Anypoint
+* https://www.mulesoft.com/exchange/?search=Commerce Cloud Data Connector&type=connector[Anypoint
 Exchange]
 * https://forums.mulesoft.com[MuleSoft Forum]

@@ -1,4 +1,4 @@
-= Shop API Connector Design Center Configuration - Mule 4
+= Commerce Cloud Data Connector Design Center Configuration - Mule 4
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -17,7 +17,7 @@ To create an app in Design Center:
 * Add the connector as a component to process the input for the app.
 
 For information about Design Center field values, see
-the xref:../../shop-api/shop-api-connector-reference.adoc[Shop API Connector Reference]
+the xref:../../data-api/data-api-connector-reference.adoc[Commerce Cloud Data Connector Reference]
 
 == Configure the Input Source Trigger
 
@@ -48,21 +48,10 @@ Design Center automatically saves all changes.
 == Configure the Target Component
 
 . Click *+* next to the trigger card.
-. In *Select a component*, search for Shop API Connector.
+. In *Select a component*, search for Commerce Cloud Data Connector.
 . Select the connector name.
 . Select an operation for the connector and add the configurations.
 
-* Complete these fields for Client_Id Connection Provider:
-
-+
-[%header%autowidth.spread]
-
-|===
-|*Field* |Description |Required? 
-|*Base URI*|URL to access API| {y}
-|*Client Id*|Client ID for authentication| {y}
-|===
-+
 
 * Complete these fields for Auth 2 Application Connection Provider:
 
@@ -77,21 +66,6 @@ Design Center automatically saves all changes.
 |*Token URI*|URL to access token| {y}
 |*Client Id*|Client ID of commerce cloud account| {y}
 |*Client Secret*|Client secret of commerce cloud account| {y}
-|===
-+
-
-* Complete these fields for Customer Auth Connection Provider:
-
-+
-[%header%autowidth.spread]
-
-|===
-|Field |Description |Required?  
-|*Base URI*|URL to access API| {y}
-|*Username*|Username of commerce cloud account| {y}
-|*Password*|Password of commerce cloud account| {y}
-|*Client Id*|Client ID of commerce cloud account| {y}
-|*Type*|Customer Type (Guest or Credentials)| {y}
 |===
 +
 

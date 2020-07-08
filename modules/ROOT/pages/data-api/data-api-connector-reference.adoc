@@ -171,43 +171,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 == Assignments Search
 `<commerce-cloud-dataapi:assignment-search>`
 
-
-Searches for promotion campaign assignments. The promotion campaign assignment search document contains a search object that allows filtering on various attributes. 
-The query attribute specifies a complex query that can be used to narrow down the search. Attributes are grouped into different buckets. The following is a list of searchable attributes with their corresponding buckets:
-        
-        main:
-        
-        | Attribute | Type |
-        |-----------|--------|
-        | rank| Integer |
-        | startDate | Date |
-        | endDate | Date | 
-                          
-        campaign:
-        
-        | Attribute | Type |
-        |-----------|--------|
-        | campaign| String |
-                  
-        promotion:
-        
-        | Attribute | Type |
-        |-----------|--------|
-        | promotionId| String |
-        | description | String |
-        | enabled | Boolean |             
-                  
-        special handling:
-        
-        | Attribute | Type |
-        |-----------|--------|
-        | couponId| String |         
-          
-Only fields in the same bucket can be joined using a disjunction (or). For instance, when joining campaignId and rank, only a conjunction (and) is allowed, 
-whereas promotionId and description can be joined to each other using a disjunction because they are in the same bucket. Special handling fields must always use conjunctions. 
-If the field is used in a disjunction that violates this rule, an exception is thrown.
-Note that only searchable attributes can be used in sorting. 
-
+Searches for promotion campaign assignments. 
 This operation makes an HTTP POST request to the /pricing/assignments/{{version}}/organizations/{{organizationId}}/assignments endpoint.
 
 
