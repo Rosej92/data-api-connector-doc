@@ -65,7 +65,7 @@ Commerce Cloud Data Connector supports only one type of connection provider:
 |Token url | Token URL
 |============
 
-image::data-api/oauth2-configuration/data-api-connector-oauth2-configuration.png[]
+image::data-api/oauth2-configuration/data-api-connector-oauth2-configuration.jpg[]
 
 [start = 4]
 . You can either enter credentials directly into the global configuration properties or reference them from a configuration file that contains the values.
@@ -73,7 +73,7 @@ image::data-api/oauth2-configuration/data-api-connector-oauth2-configuration.png
 . Make a Test Connection... to validate the configuration.
 . On success, the configuration is ready to use!
 
-image::data-api/oauth2-configuration/data-api-connector-oauth2-test-connection.png[]
+image::data-api/oauth2-configuration/data-api-connector-oauth2-test-connection.jpg[]
 
 [start = 6]
 . A successful OAuth2 Application Connection Provider configuration looks like this:
