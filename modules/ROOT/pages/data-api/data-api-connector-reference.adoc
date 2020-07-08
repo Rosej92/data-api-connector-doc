@@ -84,9 +84,6 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 | Object Store a| String |  A reference to the object store that should be used to store each resource owner id's data. If not specified, runtime will automatically provision the default one. |  | {nbsp}
 |===
 
-==== Associated Operations
-* <<AssignmentsSearch>> {nbsp}
-
 ---
 [[DataOauth2Configuration]]
 === Data Oauth2 Configuration
@@ -115,7 +112,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 |===
 
 ==== Connection Types
-[[DataOauth2Configuration_Oauth2Application]]
+[[DataOauth2Configuration]]
 ===== Oauth2 Application Connection Provider
 
 
@@ -167,11 +164,11 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 
 == Operations
 
-* <<AssignmentSearch>> {nbsp}
+* <<AssignmentsSearch>> {nbsp}
 
 
 [[AssignmentSearch]]
-== Assignment Search
+== Assignments Search
 `<commerce-cloud-dataapi:assignment-search>`
 
 
@@ -248,7 +245,7 @@ The query attribute specifies a complex query that can be used to narrow down th
 
 === For Configurations
 
-* <<Oauth2Configuration>> {nbsp}
+* <<DataOauth2Configuration>> {nbsp}
 
 === Throws
 
