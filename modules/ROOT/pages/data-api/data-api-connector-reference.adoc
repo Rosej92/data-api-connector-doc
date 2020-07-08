@@ -95,7 +95,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 |===
 | Name | Type | Description | Default Value | Required
 |Name | String | The name for this configuration. Connectors reference the configuration with this name. | | *{y}*{nbsp}
-| Connection a| <<ShopOauth2Configuration_Oauth2Application, Oauth2 Application Connection Provider>>
+| Connection a| <<DataConfiguration_Oauth2Application, Oauth2 Application Connection Provider>>
  | The connection types that can be provided to this configuration. | | *{y}*{nbsp}
 | Response Timeout a| Number |  The timeout for request to the remote service. |  1 | {nbsp}
 | Response Timeout Unit a| Enumeration, one of:
@@ -167,7 +167,7 @@ The Commerce Cloud Data Connector is an Operation Based Connector, which means t
 * <<AssignmentsSearch>> {nbsp}
 
 
-[[AssignmentSearch]]
+[[AssignmentsSearch]]
 == Assignments Search
 `<commerce-cloud-dataapi:assignment-search>`
 
@@ -203,10 +203,12 @@ The query attribute specifies a complex query that can be used to narrow down th
         |-----------|--------|
         | couponId| String |         
           
-      Only fields in the same bucket can be joined using a disjunction (or). For instance, when joining campaignId and rank, only a conjunction (and) is allowed, whereas promotionId and description can be joined to each other using a disjunction because they are in the same bucket. Special handling fields must always use conjunctions. If the field is used in a disjunction that violates this rule, an exception is thrown. 
+Only fields in the same bucket can be joined using a disjunction (or). For instance, when joining campaignId and rank, only a conjunction (and) is allowed, 
+whereas promotionId and description can be joined to each other using a disjunction because they are in the same bucket. Special handling fields must always use conjunctions. 
+If the field is used in a disjunction that violates this rule, an exception is thrown.
+Note that only searchable attributes can be used in sorting. 
 
-               
-      Note that only searchable attributes can be used in sorting. This operation makes an HTTP POST request to the /pricing/assignments/{{version}}/organizations/{{organizationId}}/assignments endpoint
+This operation makes an HTTP POST request to the /pricing/assignments/{{version}}/organizations/{{organizationId}}/assignments endpoint.
 
 
 === Parameters
