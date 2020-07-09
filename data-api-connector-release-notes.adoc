@@ -24,7 +24,7 @@ Commerce Cloud Data Connector is compatible with these software versions:
 
 == Features
 
-Commerce Cloud Data Connector provides access to Salesforce Commerce Cloud Data APIs for these workflows:
+Commerce Cloud Data Connector provides access to Salesforce Commerce Cloud Data APIs for the below workflows:
 
 * Assignments
 * Campaigns
@@ -38,7 +38,7 @@ Commerce Cloud Data Connector provides access to Salesforce Commerce Cloud Data 
 * Source Code Groups
 
 == Fixed in This Release
-Not applicable: this is the first released version.
+Not applicable: This is the first released version.
 
 == See Also
 * https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[Anypoint Connectors Support Policy]
